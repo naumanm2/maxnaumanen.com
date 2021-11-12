@@ -1,13 +1,16 @@
 import React from 'react'
-import Footer from '../components/footer'
+import Header from '../components/footer'
+import HireMe from '../components/header'
+import Footer from '../components/hireme'
 import Sidebar from '../components/sidebar'
 
 const contact = () => {
     return (
         <div>
+            <Header />
+            <HireMe />
             <Sidebar active="contact"/>
             <Footer />
-            contact
         </div>
     )
 }

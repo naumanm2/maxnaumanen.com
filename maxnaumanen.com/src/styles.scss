@@ -15,6 +15,9 @@ body {
   font-size: 16px;
   background-color: $white;
   font-weight: 300;
+  @media (max-width: 1366px) {
+    font-size: 14px;
+  }
   @media (max-width: 976px) {
     font-size: 12px;
   }
@@ -40,7 +43,7 @@ a {
 .container {
   position: relative;
   left: 0%;
-  width: 60vw;
+  width: 40vw;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -93,9 +96,28 @@ header {
   text-align: right;
   h1 {
     font-size: 3em;
-  }
-  h2 {
-  }
+    @media (max-width: 1366px) {
+      font-size: 3em;
+    }
+    @media (max-width: 976px) {
+      font-size: 2.5em;
+    }
+    @media (max-width: 768px) {
+      font-size: 2em;
+    }
+}
+    h2 {
+        @media (max-width: 1366px) {
+            font-size: 2em;
+          }
+          @media (max-width: 976px) {
+            font-size: 1.75em;
+          }
+          @media (max-width: 768px) {
+            font-size: 1.5em;
+          }
+    }
+
   ul {
     list-style-type: none;
     float: right;
@@ -104,10 +126,35 @@ header {
     float: left;
     margin-left: 20px;
     font-size: 1.5em;
+    .icon {
+    @media (max-width: 1366px) {
+        font-size: 1em;
+      }
+      @media (max-width: 976px) {
+        font-size: 1em;
+      }
+      @media (max-width: 768px) {
+        font-size: 1.25em;
+      }
+    }
   }
+  
 }
 
 .projects {
+  .extIcon {
+    font-size: 10px;
+
+    @media (max-width: 1366px) {
+      font-size: 8px;
+    }
+    @media (max-width: 976px) {
+      font-size: 7px;
+    }
+    @media (max-width: 768px) {
+      font-size: 6px;
+    }
+  }
   .professional {
     .pro-projects {
       li {
@@ -135,7 +182,50 @@ header {
   }
 }
 
+.aboutme {
+    .intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+  .imageofme {
+    // position: absolute;
+    // z-index: 0;
+    // top: 0%;
+    // left: 60%;
+    width: 200px;
+    @media (max-width: 1366px) {
+        top: 4%;
+      width: 150px;
+    }
+    @media (max-width: 976px) {
+        top: 8%;
+      width: 100px;
+    }
+    @media (max-width: 768px) {
+     top: 12%;
+     left: 60%;
+      width: 50px;
+    }
+  }
+
+  line-height: 1.5;
+  .aboutprofessional {
+    margin: 10px 0;
+  }
+  .abouthobbies {
+    margin: 10px 0;
+  }
+  .keywords {
+
+  }
+  .jungle {
+      color: $grey;
+  }
+}
+
 .resume {
+  margin-top: 50px;
   .education {
     margin-top: 10px;
     &.details {
@@ -143,8 +233,6 @@ header {
         display: flex;
         justify-content: space-between;
         font-size: 0.9em;
-        width: 60vw;
-        max-width: 976px;
         .programme {
           font-weight: bold;
         }
@@ -159,6 +247,48 @@ header {
     }
   }
 }
+
+.hireme {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+    h1 {
+      font-size: 3em;
+      @media (max-width: 1366px) {
+        font-size: 3em;
+      }
+      @media (max-width: 976px) {
+        font-size: 2.5em;
+      }
+      @media (max-width: 768px) {
+        font-size: 1.8em;
+      }
+    }
+    h2 {
+    }
+    ul {
+      list-style-type: none;
+      float: right;
+    }
+    li {
+      float: left;
+      margin-left: 20px;
+      .icon {
+        @media (max-width: 1366px) {
+            font-size: 1em;
+          }
+          @media (max-width: 976px) {
+            font-size: 1em;
+          }
+          @media (max-width: 768px) {
+            font-size: 1.25em;
+          }
+        }
+    }
+  }
 
 .footer {
   position: absolute;

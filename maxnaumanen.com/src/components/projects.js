@@ -14,8 +14,8 @@ const Projects = () => {
             <li className="i1">
               <h2>2021</h2>
               <h3>
-                <Link to="https://www.burgercompany.fi">burgercompany.fi</Link>{" "}
-                <FaExternalLinkAlt size={10} />
+                <a href="https://www.burgercompany.fi">burgercompany.fi</a>{" "}
+                <FaExternalLinkAlt className="extIcon"/>
               </h3>
               <p>visual identity, website for burger company</p>
             </li>
@@ -40,9 +40,9 @@ const Projects = () => {
             <li className="i2">
               <h2>2020</h2>
               <h3>
-                <Link to="https://stormy-mountain-32205.herokuapp.com/#/">
+                <a href="https://stormy-mountain-32205.herokuapp.com/#/">
                   Design of WWW-services
-                </Link>{" "}<FaExternalLinkAlt size={10} />
+                </a>{" "}<FaExternalLinkAlt className="extIcon" />
               </h3>
               <p>
                 We created a website concept that would help museum visitors to
