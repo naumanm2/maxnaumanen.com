@@ -1,0 +1,175 @@
+//global variables
+
+//colors
+$white: #fff;
+$black: #000;
+$grey: #9a9a9a;
+
+$font: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, helvetica neue, sans-serif;
+
+html,
+body {
+  font-family: $font;
+  color: $black;
+  font-size: 16px;
+  background-color: $white;
+  font-weight: 300;
+  @media (max-width: 976px) {
+    font-size: 12px;
+  }
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+  &:hover {
+    color: $black;
+  }
+  @media (max-width: 976px) {
+    font-size: 12px;
+  }
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+
+.container {
+  position: relative;
+  left: 0%;
+  width: 60vw;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  height: 8vh;
+}
+
+//sidebar
+.sidebar {
+  position: fixed;
+  top: 10%;
+  width: 10vw;
+  .nav-links {
+    list-style-type: none;
+
+    li {
+      margin-top: 20px;
+      font-size: 16px;
+      a {
+        color: $grey;
+        &:hover {
+          color: $black;
+        }
+      }
+      &.i1 {
+      }
+      &.i2 {
+      }
+      &.i3 {
+      }
+      &.i4 {
+      }
+      &.active {
+        a {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+  }
+  ul {
+    list-style-type: none;
+    float: right;
+  }
+  li {
+    float: left;
+    margin-left: 20px;
+    font-size: 1.5em;
+  }
+}
+
+.projects {
+  .professional {
+    .pro-projects {
+      li {
+        list-style-type: none;
+      }
+      h1 {
+        margin-left: -20px;
+      }
+      h3 {
+      }
+    }
+  }
+  .school {
+    .school-projects {
+      li {
+        list-style-type: none;
+      }
+      h1 {
+        margin-left: -20px;
+      }
+    }
+    @media (max-width: 600px) {
+      font-size: 0.75em;
+    }
+  }
+}
+
+.resume {
+  .education {
+    margin-top: 10px;
+    &.details {
+      .overall {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9em;
+        width: 60vw;
+        max-width: 976px;
+        .programme {
+          font-weight: bold;
+        }
+        .time {
+          margin-right: 20px;
+        }
+      }
+      .specifics {
+        font-style: italic;
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  p {
+    color: $grey;
+    font-size: 0.6em;
+  }
+}
