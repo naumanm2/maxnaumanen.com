@@ -53,13 +53,17 @@ const Projects = () => {
             </li>
             <li className="i3">
               <h3>
-                <a href="https://github.com/naumanm2/machine_learning">
+                {/* <a href="https://github.com/naumanm2/machine_learning">
                   Machine Learning
                 </a>{" "}
-                <FaExternalLinkAlt className="extIcon" />
+                <FaExternalLinkAlt className="extIcon" /> */}
+                <Link to="/projects/machine-learning">
+                  Machine learning
+                </Link>
               </h3>
               <p>
-                I trained a model to identify individual letters similar to those in CAPTCHA.
+                I trained a model to identify individual letters similar to
+                those in CAPTCHA.
               </p>
             </li>
           </ul>

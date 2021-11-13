@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import { BsArrowLeft } from "react-icons/bs";
 
-const ProjectDescription = () => {
+const ProjectDescriptionUID = () => {
   return (
     <div>
       <div className="projects">
@@ -16,7 +16,7 @@ const ProjectDescription = () => {
             </Link>
             <h1>User Inspired Design Making project</h1>
           </div>
-          <p className="date">I semester 2021</p>
+          <p className="date">fall semester 2021</p>
           <h2>Briefly</h2>
           <p>
             I worked in an international team that consisted of 5 students from
@@ -46,7 +46,7 @@ const ProjectDescription = () => {
           <div className="img-text">illustrations by Madeleine Beltrandi</div>
           <p>
             Our team enjoyed success on this course, as our project was voted as
-            one of the best amongst 20-or so projects.
+            one of the best be peers amongst 20-or so projects.
           </p>
         </div>
       </div>
@@ -54,4 +54,4 @@ const ProjectDescription = () => {
   );
 };
 
-export default ProjectDescription;
+export default ProjectDescriptionUID;

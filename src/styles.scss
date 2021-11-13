@@ -331,10 +331,25 @@ header {
         height: 300px;
       }
     }
+    &.ml {
+      .image {
+        width: 100%;
+        img {
+          object-fit: cover;
+          height: 300px;
+        }
+      }
+      
+    }
+    
   } 
+
   .img-text {
     font-size: 9px;
     color: $grey;
+  }
+  .icon {
+    font-size: 9px;
   }
 }
 
