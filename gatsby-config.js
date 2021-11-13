@@ -14,12 +14,12 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     {
-      resolve: "gatsby-plugin-google-gtag",
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: "G-15B2NM4K9N",
-      },
-      pluginConfig: {
-        head: true
+        trackingIds: ["G-15B2NM4K9N"],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     "gatsby-plugin-react-helmet",

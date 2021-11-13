@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from 'gatsby'
 
-const Error = () => {
+const error = () => {
   return (
     <div>
       <div className="hireme">
@@ -17,4 +17,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default error;
