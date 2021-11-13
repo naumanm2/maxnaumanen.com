@@ -42,7 +42,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#20322A`,
         display: `standalone`,
-        icon: "src/images/favicon_red.png",
+        icon: "src/images/favicon_darkred_512.png",
       },
     },
   ],
