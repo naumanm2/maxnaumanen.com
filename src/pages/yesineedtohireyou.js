@@ -5,6 +5,8 @@ import HireMe from '../components/header'
 import Footer from '../components/hireme'
 import Sidebar from '../components/sidebar'
 
+import '../styles.scss'
+
 const contact = () => {
     return (
         <div>

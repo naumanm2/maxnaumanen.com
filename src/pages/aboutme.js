@@ -6,6 +6,8 @@ import Header from '../components/header'
 import Resume from '../components/resume'
 import Sidebar from '../components/sidebar'
 
+import '../styles.scss'
+
 const aboutme = () => {
     return (
         <div>
