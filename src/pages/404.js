@@ -1,11 +1,13 @@
 import React from 'react'
 
-import { Link } from 'gatsby'
+import Error from '../components/error'
+import '../styles/styles.scss'
+
 
 const NotFoundPage = () => {
   return (
     <div>
-      <Link to="/">home</Link>
+      <Error />
     </div>
   )
 }
