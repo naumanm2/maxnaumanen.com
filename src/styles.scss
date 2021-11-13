@@ -18,12 +18,9 @@ body {
   @media (max-width: 1366px) {
     font-size: 14px;
   }
-  @media (max-width: 976px) {
-    font-size: 12px;
-  }
-  @media (max-width: 768px) {
-    font-size: 10px;
-  }
+  // @media (max-width: 768px) {
+  //   font-size: 10px;
+  // }
 }
 
 a {
@@ -32,12 +29,12 @@ a {
   &:hover {
     color: $black;
   }
-  @media (max-width: 976px) {
-    font-size: 12px;
-  }
-  @media (max-width: 768px) {
-    font-size: 10px;
-  }
+  // @media (max-width: 976px) {
+  //   font-size: 12px;
+  // }
+  // @media (max-width: 768px) {
+  //   font-size: 10px;
+  // }
 }
 
 .container {
@@ -46,11 +43,117 @@ a {
   width: 40vw;
   max-width: 1400px;
   margin: 0 auto;
+  @media (max-width: 1366px) {
+    width: 50vw;
+  }
+  @media (max-width: 976px) {
+    width: 65vw;
+  }
+  @media (max-width: 768px) {
+    width: 80vw;
+  }
 }
 
 header {
   position: relative;
   height: 8vh;
+}
+.hamburger {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 3em;
+  top: 4%;
+  left: 4%;
+  z-index: 3;
+  cursor: pointer;
+  .burger-container {
+    display: none;
+    @media (max-width: 768px) {
+      display: inline;
+    }
+    .burger {
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background: $black;
+      margin: 8px;
+      transition: all 150ms ease-in;
+      &.--1 {
+        transform: translateY(-5px);
+      }
+      // &.--2 {
+      //   width: 0px;
+      // }
+      &.--3 {
+        transform: translateY(5px);
+      }
+    }
+    &.active {
+      .burger {
+        transform: rotate(45deg);
+        transition: all 150ms ease-in;
+        &.--1 {
+        }
+        // &.--2 {
+        //   width: 18px;
+        //   visibility: hidden;
+        // }
+        &.--3 {
+          transform: rotate(-45deg);
+          width: 25px;
+        }
+      }
+    }
+  }
+}
+
+.mobilnav {
+  font-size: 16px;
+  position: fixed;
+  display: none;
+  @media (max-width: 768px) {
+    display: inline;
+  }
+  .mobil-menu {
+    text-align: right;
+    .mobil-list {
+      transform: translateY(-25px);
+      opacity: 0;
+    }
+  }
+}
+.mobilnav-active {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+  z-index: 2;
+  .mobil-menu {
+    text-align: right;
+    height: 100vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .mobil-list {
+      transform: translateY(0);
+      opacity: 1;
+      list-style-type: none;
+      transition: all 500ms ease;
+      li {
+        font-weight: 400;
+        line-height: 1.5em;
+        margin-bottom: 3em;
+        a {
+          font-size: 24px;
+          line-height: 1.5em;
+          color: $grey;
+        }
+      }
+    }
+  }
 }
 
 //sidebar
@@ -58,6 +161,9 @@ header {
   position: fixed;
   top: 10%;
   width: 10vw;
+  @media (max-width: 768px) {
+    visibility: hidden;
+  }
   .nav-links {
     list-style-type: none;
 
@@ -105,18 +211,18 @@ header {
     @media (max-width: 768px) {
       font-size: 2em;
     }
-}
-    h2 {
-        @media (max-width: 1366px) {
-            font-size: 2em;
-          }
-          @media (max-width: 976px) {
-            font-size: 1.75em;
-          }
-          @media (max-width: 768px) {
-            font-size: 1.5em;
-          }
+  }
+  h2 {
+    @media (max-width: 1366px) {
+      font-size: 2em;
     }
+    @media (max-width: 976px) {
+      font-size: 1.75em;
+    }
+    // @media (max-width: 768px) {
+    //   font-size: 1.5em;
+    // }
+  }
 
   ul {
     list-style-type: none;
@@ -127,7 +233,7 @@ header {
     margin-left: 20px;
     font-size: 1.5em;
     .icon {
-    @media (max-width: 1366px) {
+      @media (max-width: 1366px) {
         font-size: 1em;
       }
       @media (max-width: 976px) {
@@ -138,22 +244,22 @@ header {
       }
     }
   }
-  
 }
 
 .projects {
+  overflow-y: scroll;
+  height: 80vh;
   .extIcon {
     font-size: 10px;
-
     @media (max-width: 1366px) {
       font-size: 8px;
     }
-    @media (max-width: 976px) {
-      font-size: 7px;
-    }
-    @media (max-width: 768px) {
-      font-size: 6px;
-    }
+    // @media (max-width: 976px) {
+    //   font-size: 7px;
+    // }
+    // @media (max-width: 768px) {
+    //   font-size: 6px;
+    // }
   }
   .professional {
     .pro-projects {
@@ -176,18 +282,15 @@ header {
         margin-left: -20px;
       }
     }
-    @media (max-width: 600px) {
-      font-size: 0.75em;
-    }
   }
 }
 
 .aboutme {
-    .intro {
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;
-    }
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
   .imageofme {
     // position: absolute;
     // z-index: 0;
@@ -195,16 +298,16 @@ header {
     // left: 60%;
     width: 200px;
     @media (max-width: 1366px) {
-        top: 4%;
+      top: 4%;
       width: 150px;
     }
     @media (max-width: 976px) {
-        top: 8%;
+      top: 8%;
       width: 100px;
     }
     @media (max-width: 768px) {
-     top: 12%;
-     left: 60%;
+      top: 12%;
+      left: 60%;
       width: 50px;
     }
   }
@@ -217,10 +320,9 @@ header {
     margin: 10px 0;
   }
   .keywords {
-
   }
   .jungle {
-      color: $grey;
+    color: $grey;
   }
 }
 
@@ -249,46 +351,55 @@ header {
 }
 
 .hireme {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    text-align: right;
-    h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+  h1 {
+    font-size: 3em;
+    @media (max-width: 1366px) {
       font-size: 3em;
-      @media (max-width: 1366px) {
-        font-size: 3em;
-      }
-      @media (max-width: 976px) {
-        font-size: 2.5em;
-      }
-      @media (max-width: 768px) {
-        font-size: 1.8em;
-      }
     }
-    h2 {
+    @media (max-width: 976px) {
+      font-size: 2.5em;
     }
-    ul {
-      list-style-type: none;
-      float: right;
-    }
-    li {
-      float: left;
-      margin-left: 20px;
-      .icon {
-        @media (max-width: 1366px) {
-            font-size: 1em;
-          }
-          @media (max-width: 976px) {
-            font-size: 1em;
-          }
-          @media (max-width: 768px) {
-            font-size: 1.25em;
-          }
-        }
+    // @media (max-width: 768px) {
+    //   font-size: 1.8em;
+    // }
+  }
+  .email {
+    a {
+      font-size: 1.5em;
     }
   }
+  ul {
+    list-style-type: none;
+    float: right;
+  }
+  @media (max-width: 799px) {
+    h2 {
+      font-size: 1em;
+    }
+  }
+  li {
+    float: left;
+    margin-left: 20px;
+    .icon {
+      font-size: 2em;
+      @media (max-width: 1366px) {
+        font-size: 1.5em;
+      }
+      @media (max-width: 976px) {
+        font-size: 1.5em;
+      }
+      @media (max-width: 768px) {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
 
 .footer {
   position: absolute;

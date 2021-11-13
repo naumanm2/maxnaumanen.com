@@ -7,6 +7,7 @@ import Footer from '../components/footer'
 import Sidebar from '../components/sidebar'
 
 import '../styles.scss'
+import Hamburger from '../components/hamburger'
 
 
 const index = () => {
@@ -14,6 +15,7 @@ const index = () => {
     <div>
       <SEO />
       <Header />
+      <Hamburger />
       <Sidebar active="home"/>
       <Hero />
       <Footer />
