@@ -1,6 +1,5 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https:/www.maxnaumanen.com",
     title: "max",
     titleTemplate: "designer, techniquêist",
     description: `pls hire me`,
@@ -25,7 +24,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: "/",
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
