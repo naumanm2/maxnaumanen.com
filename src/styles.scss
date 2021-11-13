@@ -251,7 +251,10 @@ header {
 
 .projects {
   overflow-y: scroll;
-  height: 70vh;
+  height: 80vh;
+  @media (max-width: 199px) {
+    height: 70vh;
+  }
   .extIcon {
     font-size: 10px;
     @media (max-width: 1366px) {
@@ -285,6 +288,14 @@ header {
         margin-left: -20px;
       }
     }
+  }
+}
+
+.aboutmewrapper {
+  height: 80vh;
+  overflow-y: scroll;
+  @media (max-width: 799px) {
+    height: 70vh;
   }
 }
 
