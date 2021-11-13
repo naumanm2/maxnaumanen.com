@@ -12,7 +12,7 @@ const aboutme = () => {
             <Header />
             <Hamburger />
             <Sidebar active="aboutme"/>
-                <div style={{ height: '80vh', overflowY: 'scroll'}}>
+                <div style={{ height: '70vh', overflowY: 'scroll'}}>
                 <AboutMe />
                 <Resume />
             </div>
