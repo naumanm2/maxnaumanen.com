@@ -5,7 +5,7 @@ import Header from "../../components/header";
 import Projects from "../../components/projects";
 import Sidebar from "../../components/sidebar";
 
-import '../styles.scss'
+import '../../styles.scss'
 
 const projects = () => {
   return (
