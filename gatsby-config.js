@@ -19,6 +19,10 @@ module.exports = {
       options: {
         trackingId: "G-15B2NM4K9N",
       },
+      pluginConfig: {
+        head: true,
+        anonymize_ip: true,
+      },
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
