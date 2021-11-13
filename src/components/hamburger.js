@@ -14,9 +14,9 @@ const Hamburger = () => {
             setActive(!active);
           }}
         >
-          <div className="burger --1" />
+          <div className="burger b--1" />
           {/* <div className="burger --2" /> */}
-          <div className="burger --3" />
+          <div className="burger b--3" />
         </div>
       </div>
       <div className={"mobilnav" + (active ? "-active" : "")}>
