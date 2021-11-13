@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Error from '../components/error'
-import '../styles/styles.scss'
+import '../styles.scss'
 
 
 const NotFoundPage = () => {
