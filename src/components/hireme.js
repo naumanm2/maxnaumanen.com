@@ -17,7 +17,7 @@ const HireMe = () => {
           </a>
         </li>
         <li className="i3">
-          <a href="https://linkedin.com">
+          <a href="https://linkedin.com/in/max-naumanen-969369138">
             <FaLinkedinIn className="icon"/>
           </a>
         </li>

@@ -4,7 +4,6 @@ import { Link } from "gatsby";
 
 const Hamburger = () => {
   const [active, setActive] = useState(false);
-  console.log(active);
   return (
     <>
       <div className="hamburger">
