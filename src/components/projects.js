@@ -51,6 +51,17 @@ const Projects = () => {
                 inspect current exhibitions.
               </p>
             </li>
+            <li className="i3">
+              <h3>
+                <a href="https://github.com/naumanm2/machine_learning">
+                  Machine Learning
+                </a>{" "}
+                <FaExternalLinkAlt className="extIcon" />
+              </h3>
+              <p>
+                I trained a model to identify individual letters similar to those in CAPTCHA.
+              </p>
+            </li>
           </ul>
         </div>
       </div>

@@ -289,7 +289,56 @@ header {
       }
     }
   }
+  .inner-wrapper {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    .icon {
+      @keyframes slideToLeft {
+        0% {
+          transform: translateX(30px);
+          opacity: 0;
+        } 100% {
+          transform: translateX(0px);
+          opacity: 1;
+        }
+      }
+      animation: 0.6s ease-in 0s 1 slideToLeft;
+      margin-left: -30px;
+      font-size: 16px;
+    }
+    
+  }
+  p {
+    line-height: 1.5;
+  }
+  .date {
+    margin-top: -20px;
+    color: $grey;
+    font-style: italic;
+  }
+
+  .image-gallery {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    .image {
+      width: 25%;
+      img {
+        object-fit: cover;
+        height: 300px;
+      }
+    }
+  } 
+  .img-text {
+    font-size: 9px;
+    color: $grey;
+  }
 }
+
+
 
 .aboutmewrapper {
   height: 80vh;

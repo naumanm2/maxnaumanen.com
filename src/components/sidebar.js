@@ -13,7 +13,7 @@ const Sidebar = ({active}) => {
           <Link to="/projects">projects</Link>
         </li>
         <li className={"i3" + (active === "aboutme" ? " active" : "")}>
-          <Link to="/aboutme">aboutme</Link>
+          <Link to="/aboutme">about me</Link>
         </li>
         <li className={"i4" + (active === "contact" ? " active" : "")}>
           <Link to="/yesineedtohireyou">yes I need to hire you</Link>
