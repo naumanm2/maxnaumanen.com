@@ -32,7 +32,7 @@ const Hamburger = () => {
                 <Link to="/aboutme" onClick={() => setActive(false)}>about me</Link>
               </li>
               <li>
-                <Link to="/yesineedtohireyou" onClick={() => setActive(false)}>yes I need to hire you</Link>
+                <Link to="/yesineedtohireyou" onClick={() => setActive(false)}>yes you need to hire me</Link>
               </li>
             </ul>
           </div>

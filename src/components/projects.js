@@ -19,6 +19,10 @@ const Projects = () => {
                 <FaExternalLinkAlt className="extIcon" />
               </h3>
               <p>visual identity, website for burger company</p>
+              <div className="technique-keywords">
+                {/* <h3>techniques used:</h3> */}
+                #illustrator #photoshop #indesign #XD #gatsby
+              </div>
             </li>
           </ul>
         </div>
@@ -37,6 +41,10 @@ const Projects = () => {
                 'doggy-bag' for graduating middle schoolers to level out income
                 inequality through equal access to financial knowledge.
               </p>
+              <div className="technique-keywords">
+                {/* <h3>techniques used:</h3> */}
+                #ucd
+              </div>
             </li>
             <li className="i2">
               <h2>2020</h2>
@@ -50,6 +58,10 @@ const Projects = () => {
                 We created a website concept that would help museum visitors to
                 inspect current exhibitions.
               </p>
+              <div className="technique-keywords">
+                {/* <h3>techniques used:</h3> */}
+                #react #redux #node.js #mongoDB
+              </div>
             </li>
             <li className="i3">
               <h3>
@@ -57,14 +69,16 @@ const Projects = () => {
                   Machine Learning
                 </a>{" "}
                 <FaExternalLinkAlt className="extIcon" /> */}
-                <Link to="/projects/machine-learning">
-                  Machine learning
-                </Link>
+                <Link to="/projects/machine-learning">Machine learning</Link>
               </h3>
               <p>
                 I trained a model to identify individual letters similar to
                 those in CAPTCHA.
               </p>
+              <div className="technique-keywords">
+                {/* <h3>techniques used:</h3> */}
+                #python #SVC #KNN #random forest
+              </div>
             </li>
           </ul>
         </div>

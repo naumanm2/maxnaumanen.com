@@ -13,7 +13,7 @@ import Hamburger from '../components/hamburger'
 const index = () => {
   return (
     <div>
-      <SEO />
+      <SEO title="home"/>
       <Header />
       <Hamburger />
       <Sidebar active="home"/>

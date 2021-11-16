@@ -9,8 +9,7 @@ const Hero = () => {
     <div className="hero">
       <div className="container">
         <h1>
-          hi<span style={{ color: "#A230C6" }}>,</span> i
-          <span style={{ color: "#20322A" }}>'</span>m max
+          hi<span className="common-color">,</span> i'm max
         </h1>
         <h2>designer, composer, creator of things</h2>
         <p>student of design, things that are technical</p>

@@ -7,7 +7,7 @@ const AboutMe = () => {
       <div className="container">
         <div className="intro">
           <div className="i1">
-            <h1>about me</h1>
+            <h1>about <span className="common-color"></span>me</h1>
             <h2>Max Naumanen</h2>
             <div className="aboutprofessional">
               I like things that are visual and technical. I like to think that

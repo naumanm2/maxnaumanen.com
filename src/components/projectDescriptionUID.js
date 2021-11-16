@@ -46,8 +46,12 @@ const ProjectDescriptionUID = () => {
           <div className="img-text">illustrations by Madeleine Beltrandi</div>
           <p>
             Our team enjoyed success on this course, as our project was voted as
-            one of the best be peers amongst 20-or so projects.
+            one of the best by peers amongst 20-or so projects.
           </p>
+          <div className="technique-keywords">
+            {/* <h3>techniques used:</h3> */}
+            #ucd 
+          </div>
         </div>
       </div>
     </div>

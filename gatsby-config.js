@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: "max",
-    titleTemplate: "designer, techniquêist",
+    titleTemplate: "technique, design",
     description: `pls hire me`,
     image: "src/images/favicon_red.png",
     url: "https://www.maxnaumanen.com",
     siteUrl: "https://www.maxnaumanen.com",
     author: "@maxnaumanen",
     twitterUsername: "maxnaumanen",
-    keywords: `tech, developer, ux, ui, react, gatsby, aalto, helsinki, student, design`,
+    keywords: `tech, developer, ux, ui, react, gatsby, aalto, helsinki, student, design, max naumanen`,
   },
   plugins: [
     "gatsby-plugin-sass",
