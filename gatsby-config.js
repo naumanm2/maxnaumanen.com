@@ -29,6 +29,7 @@ module.exports = {
         output: "/",
       },
     },
+    "gatsby-plugin-robots-txt",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
