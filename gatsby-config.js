@@ -29,7 +29,14 @@ module.exports = {
         output: "/",
       },
     },
-    "gatsby-plugin-robots-txt",
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://maxnaumanen.com',
+        sitemap: 'https://maxnaumanen.com/sitemap-0.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
