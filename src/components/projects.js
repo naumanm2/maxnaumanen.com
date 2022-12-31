@@ -8,38 +8,53 @@ const Projects = () => {
   return (
     <div className="projects">
       <div className="container">
-        <h1>projects</h1>
+        <h1>work</h1>
         <div className="professional">
           <ul className="pro-projects">
-            <h1>professional</h1>
+            <h2>professional</h2>
             <li className="i1">
-              <h2>2021</h2>
+              <div className="hs">
+                <h3>TBWA\Helsinki</h3>
+                <h5>2021–</h5>
+              </div>
+              <p>
+                working as junior digital designer, i do
+                every task technical i can help with. mainly
+                ui design, tbwahelsinki.fi, html5 banner
+                animation
+              </p>
               <h3>
-                <a href="https://www.burgercompany.fi">burgercompany.fi</a>{" "}
+                <a href="https://www.burgercompany.fi">
+                  burgercompany.fi
+                </a>{" "}
                 <FaExternalLinkAlt className="extIcon" />
               </h3>
-              <p>visual identity, website for burger company</p>
+              <p>
+                visual identity, website for burger company
+              </p>
               <div className="technique-keywords">
                 {/* <h3>techniques used:</h3> */}
-                #illustrator #photoshop #indesign #XD #gatsby
+                #illustrator #photoshop #indesign #XD
+                #gatsby
               </div>
             </li>
           </ul>
         </div>
         <div className="school">
           <ul className="school-projects">
-            <h1>school projects</h1>
+            <h2>school projects</h2>
             <li className="i1">
-              <h2>2021</h2>
+              <h3 className="dt year">2021</h3>
               <h3>
                 <Link to="/projects/uid-making-project">
                   User Inspired Design Making –project
                 </Link>
               </h3>
               <p>
-                I worked with a beautiful team to create a concept of
-                'doggy-bag' for graduating middle schoolers to level out income
-                inequality through equal access to financial knowledge.
+                I worked with a beautiful team to create a
+                concept of 'doggy-bag' for graduating middle
+                schoolers to level out income inequality
+                through equal access to financial knowledge.
               </p>
               <div className="technique-keywords">
                 {/* <h3>techniques used:</h3> */}
@@ -47,7 +62,7 @@ const Projects = () => {
               </div>
             </li>
             <li className="i2">
-              <h2>2020</h2>
+              <h3 className="dt year">2020</h3>
               <h3>
                 <a href="https://stormy-mountain-32205.herokuapp.com/#/">
                   Design of WWW-services
@@ -55,8 +70,9 @@ const Projects = () => {
                 <FaExternalLinkAlt className="extIcon" />
               </h3>
               <p>
-                We created a website concept that would help museum visitors to
-                inspect current exhibitions.
+                We created a website concept that would help
+                museum visitors to inspect current
+                exhibitions.
               </p>
               <div className="technique-keywords">
                 {/* <h3>techniques used:</h3> */}
@@ -69,11 +85,13 @@ const Projects = () => {
                   Machine Learning
                 </a>{" "}
                 <FaExternalLinkAlt className="extIcon" /> */}
-                <Link to="/projects/machine-learning">Machine learning</Link>
+                <Link to="/projects/machine-learning">
+                  Machine learning
+                </Link>
               </h3>
               <p>
-                I trained a model to identify individual letters similar to
-                those in CAPTCHA.
+                I trained a model to identify individual
+                letters similar to those in CAPTCHA.
               </p>
               <div className="technique-keywords">
                 {/* <h3>techniques used:</h3> */}

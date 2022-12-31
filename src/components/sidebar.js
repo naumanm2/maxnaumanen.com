@@ -10,7 +10,7 @@ const Sidebar = ({active}) => {
           <Link to="/">home</Link>
         </li>
         <li className={"i2" + (active === "projects" ? " active" : "")}>
-          <Link to="/projects">projects</Link>
+          <Link to="/projects">work</Link>
         </li>
         <li className={"i3" + (active === "aboutme" ? " active" : "")}>
           <Link to="/aboutme">about me</Link>
