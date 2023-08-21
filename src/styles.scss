@@ -60,13 +60,57 @@ h5 {
 }
 
 .hs {
+  width: 100%;
   display: flex;
-  align-items: flex-end;
+  justify-content: space-between;
   margin-bottom: 0;
 }
 
 .hs > h3 {
   margin-bottom: 0;
+}
+
+.left-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.right-wrapper {
+  align-self:flex-end;
+}
+
+.button-general {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  background-color: #000;
+  border:none;
+  border-radius:.5em;
+  padding: 10px 20px;
+  font-size: .9em;
+  font-weight: 600;
+  cursor:pointer;
+  div {
+    margin-right:8px;
+  }
+  &:hover {
+    svg {
+      transform: translate(6px, 2px);
+    }
+  }
+  svg {
+    transform: translateY(2px);
+    transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+}
+
+
+.right-wrapper::after {
+  content:'requires password';
+  display: block;
+  font-size: .75em;
+  color:#777777;
 }
 
 .common-color {
